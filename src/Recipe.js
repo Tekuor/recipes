@@ -2,7 +2,7 @@
 const Recipe = ({title, calories, image, ingredients}) => {
     return (
       <div className="rounded overflow-hidden shadow-lg">
-        <img className="w-full" src={image} alt="Mountain"/>
+        <img className="w-full" src={image}/>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           {ingredients.map((ingredient, index) => (
