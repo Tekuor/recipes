@@ -34,7 +34,7 @@ function App() {
   };
 
   return (
-    <div className="App text-red-200">
+    <div className="App">
       <div className="pt-2 relative mx-auto text-gray-600">
         <form onSubmit={getSearch}>
           <input
@@ -52,7 +52,7 @@ function App() {
             Search
           </button>
         </form>
-        <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <div className="mx-28 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
           {recipes.map((recipe, index) => (
             <Recipe
               key={index}
